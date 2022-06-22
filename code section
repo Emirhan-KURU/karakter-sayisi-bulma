@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char dizi[100],i,*pdizi;
+
+    printf("metin giriniz:");
+    gets(dizi);
+
+    for(pdizi = dizi ;*pdizi;pdizi++);
+    printf("%s %d karakterden olusmaktadir.",dizi,pdizi-dizi);
+
+
+    return 0;
+}
